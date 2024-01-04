@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Toshokan | Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="imgres/logo.png">
+    <script src="pt1.js"></script>
+    <script src="hays.js"></script>
+</head>
+<body>
+  <!-- navigation bar -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" onclick="easteregg()"><img src="imgres/logonav.png" alt="Web Logo" style="width:50px;"> Toshokan</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#notif"><i class="fa-solid fa-envelope"><sup><span class="badge rounded-pill bg-danger">!!</span></sup></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- notification -->
+      <div class="offcanvas offcanvas-start text-bg-dark" id="notif">
+        <div class="offcanvas-header">
+        <h1 class="offcanvas-title" onclick="debug()">Notification</h1>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+        <iframe src="notif.html" height="98%" width="100%" frameborder="0"></iframe>
+        </div>
+    </div>
+
+      <!-- website content -->
+      <div class="webcontent" id="wbcont">
+
+        <!-- Main -->
+        <div class="container-fluid" id="productpage">
+          <header>
+            <p class="h1">Welcome to Toshokan</p>
+          </header>
+    
+        <main>
+          <div class="container-fluid">
+            <section class="filters">
+              <div class="row" style="margin-bottom: 20px;">
+                <div class="col"><button class="filter-btn" data-filter="all">All</button></div>
+                <div class="col"><button class="filter-btn" data-filter="action">Action</button></div>
+                <div class="col"><button class="filter-btn" data-filter="fantasy">Fantasy</button></div>
+                <div class="col"><button class="filter-btn" data-filter="romance">Romance</button></div>
+                <div class="col"><button class="filter-btn" data-filter="mystery">Mystery</button></div>
+                <div class="col"><button class="filter-btn" data-filter="horror">Horror</button></div>
+                <div class="col"><button class="filter-btn" data-filter="supernatural">Supernatural</button></div>
+                <div class="col"><button class="filter-btn" data-filter="sports">Sports</button></div>
+              </div>
+          </section>
+          </div>
+            <section class="book-container">
+              <form id="buy-now" class="book-card" data-genre="action" action="checkout/checkout-tKqVjcnUXH-chainsaw_man_vol1.html">
+                <img src="checkout/imgs/chainsaw-man-vol-1.png" alt="chainsaw man 1">
+                <h2 name="name">Chainsaw Man Vol. 1</h2>
+                <p>Tatsuki Fujimoto </p>
+                <p class="desc">Broke young man + chainsaw dog demon = Chainsaw Man! Denji was a small-time devil hunter just trying to survive in a harsh world. After being killed on a job, Denji is revived by his pet devil-dog Pochita and becomes something new and dangerous—Chainsaw Man!</p>
+                <p>₱495.00</p>
+                <button id="buy" type="submit">Buy Now</button>
+            </form>
+            <form id="buy-now" class="book-card" data-genre="action" action="checkout/checkout-9wwBHp9xPx-chainsaw_man_vol2.html">
+                <img src="checkout/imgs/chainsaw-man-vol-2.png" alt="chainsaw man 2">
+                <h2>Chainsaw Man Vol. 2</h2>
+                <p>Tatsuki Fujimoto </p>
+                <p class="desc">After being killed on a job, he is revived by his pet devil Pochita and becomes something new and dangerous—Chainsaw Man! In order to achieve the greatest goal in human history—to touch a boob—Denji will risk everything in a fight against the dangerous Bat Devil.</p>
+                <p>₱495.00</p>
+                <button id="buy" type="submit">Buy Now</button>
+            </form>
+            <form id="buy-now" class="book-card" data-genre="fantasy" action="checkout/checkout-V8fEPIM655-black_cover_vol1.html">
+                <img src="checkout/imgs/black-clover-vol-1.png" alt="black clover 1">
+                <h2>Black Clover Vol. 1</h2>
+                <p>Yuki Tabata </p>
+                <p class="desc">Asta is a young boy who dreams of becoming the greatest mage in the kingdom. Only one problem—he can't use any magic! Luckily for Asta, he receives the incredibly rare five-leaf clover grimoire that gives him the power of anti-magic. Can someone who can't use magic really become the Wizard King?</p>
+                <p>₱559.00</p>
+                <button id="buy" type="submit">Buy Now</button>
+            </form>
+            <form id="buy-now" class="book-card" data-genre="fantasy" action="checkout/checkout-rH2cw5hbvZ-Hunter_x_hunter_vol1.html">
+                <img src="checkout/imgs/hunter-x-hunter-vol-1.png" alt="hxh 1">
+                <h2>Hunter X Hunter Vol. 1</h2>
+                <p>Yoshihiro Togashi </p>
+                <p class="desc">Gon leaves home and befriends two other hunter hopefuls: the mysterious Kurapika, who is the last of [his] clan, and Leorio, who seems a superficial moneygrubber yet actually has a heart of gold. Together they solve riddles and overcome obstacles, but their journey is only beginning.</p>
+                <p>₱559.00</p>
+                <button id="buy" type="submit">Buy Now</button>
+            </form>
+            <form id="buy-now" class="book-card" data-genre="action" action="checkout/checkout-ZJh2V1mM9o-assasination_classroom1.html">
+                <img src="checkout/imgs/Assassination-Classroom-1.png" alt="assassination classroom 1">
+                <h2>Assassination Classroom Vol. 1</h2>
+                <p>Yusei Matsui </p>
+                <p class="desc">Koro Sensei has already blown up the moon. He promises not to do the same to the Earth on one condition…that he be allowed to teach a certain junior high school remedial class for one year. In addition, he'll allow the students to attempt to take him out at any time without retaliating.</p>
+                <p>₱559.00</p>
+                <button id="buy" type="submit">Buy Now</button>
+            </form>
+            <form id="buy-now" class="book-card" data-genre="action" action="checkout/checkout-xIh13OckiS-assasination_classroom2.html">
+                <img src="checkout/imgs/Assassination-Classroom-2.png" alt="assassination classroom 2">
+                <h2>Assassination Classroom Vol. 2</h2>
+                <p>Yusei Matsui </p>
+                <p class="desc">A sexy new teacher comes to Class 3-E to do the students' job for them. When the 3-E students begin exhibiting signs of self-esteem, Principal Asano demands that Koro Sensei crush their spirits so they continue to set a bad example for the rest of the school to rise above.</p>
+                <p>₱559.00</p>
+                <button id="buy" type="submit">Buy Now</button>
+            </form>
+            <form id="buy-now" class="book-card" data-genre="mystery" action="checkout/checkout-fHIcTBcEr9-oshi_no_ko_vol1.html">
+                <img src="checkout/imgs/oshi-no-ko-vol-1.png" alt="oshi no ko 1">
+                <h2>Oshi No Ko Vol. 1</h2>
+                <p>Aka Akasaka </p>
+                <p class="desc">Gorou is an ob-gyn with a life far removed from the glitz and glamor of the entertainment industry―the world of his favorite idol, rising star Ai Hoshino. But when the two are unexpectedly brought together, their fates become intertwined in ways that defy all reason.</p>
+                <p>₱799.00</p>
+                <button id="buy" type="submit">Buy Now</button>
+            </form>
+            <form id="buy-now" class="book-card" data-genre="mystery" action="checkout/checkout-1M14uOvG59-oshi_no_ko_vol2.html">
+                <img src="checkout/imgs/oshi-no-ko-vol-2.png" alt="oshi no ko 2">
+                <h2>Oshi No Ko Vol. 2</h2>
+                <p>Aka Akasaka </p>
+                <p class="desc">Ten years after the murder of pop idol Ai Hoshino, her young (and unusually mature) twins are now poised to enter high school. While her death has had a profound effect on the children, it's manifested in polar-opposite ways.</p>
+                <p>₱799.00</p>
+                <button id="buy" type="submit">Buy Now</button>
+            </form>
+            <form id="buy-now" class="book-card" data-genre="sports" action="checkout/checkout-s1aZgpw1jP-blue_lock_vol1.html">
+                <img src="checkout/imgs/blue-lock-1-1.png" alt="blue lock 1">
+                <h2>Blue Lock Vol. 1</h2>
+                <p>Muneyuki Kaneshiro </p>
+                <p class="desc">A mad young coach gathers soccer players from across the country to compete in a series of bizarre challenges in a high-tech colosseum he calls Blue Lock. The Football Union is hell-bent on creating a striker who hungers for goals and thirsts for victory, so Blue Lock -- a rigorous training ground for 300 of Japan's best and brightest youth players -- is created. To survive this battle royale, the last striker standing will have to out-muscle and out-ego everyone who stands in his way!</p>
+                <p>₱695.00</p>
+                <button id="buy" type="submit">Buy Now</button>
+            </form>
+            <form id="buy-now" class="book-card" data-genre="action" action="checkout/checkout-fYGi19uF1n-spyxfamily_vol1.html">
+                <img src="checkout/imgs/spy-x-family-vol-1.png" alt="spy fam 1">
+                <h2>Spy X Family Vol. 1</h2>
+                <p>Tatsuya Endo </p>
+                <p class="desc">Master spy Twilight is unparalleled when it comes to going undercover on dangerous missions for the betterment of the world. But when he receives the ultimate assignment—to get married and have a kid—he may finally be in over his head! Not one to depend on others, Twilight has his work cut out for him, procuring both a wife and a child for his mission to infiltrate an elite private school. What he doesn’t know is that the wife he’s chosen is an assassin and the child he’s adopted is a telepath!</p>
+                <p>₱599.00</p>
+                <button id="buy" type="submit">Buy Now</button>
+            </form>
+            <form id="buy-now" class="book-card" data-genre="action" action="checkout/checkout-0JpBlEHoXy-spyxfamily_vol2.html">
+                <img src="checkout/imgs/spy-x-family-vol-2.png" alt="spy fam 2">
+                <h2>Spy X Family Vol. 2</h2>
+                <p>Tatsuya Endo </p>
+                <p class="desc">Twilight must infiltrate the prestigious Eden Academy to get close to his target Donovan Desmond, but has he ruined his daughter Anya's chances with his outburst during the admissions interview? Perhaps the truly impossible mission this time is making sure Anya both becomes an exemplary student and befriends Donovan’s arrogant son, Damian!</p>
+                <p>₱559.00</p>
+                <button id="buy" type="submit">Buy Now</button>
+            </form>
+            <form id="buy-now" class="book-card" data-genre="mystery" action="checkout/checkout-EfV1ehtoMU-Moriarty_vol1.html">
+                <img src="checkout/imgs/moriarty-the-patriot-vol-1.png" alt="moriarty 1">
+                <h2>Moriarty the Patriot Vol. 1</h2>
+                <p>Ryosuke Takeuchi </p>
+                <p class="desc">Before he was Sherlock’s rival, Moriarty fought against the unfair class caste system in London by making sure corrupt nobility got their comeuppance. But even the most well-intentioned plans can spin out of control—will Moriarty’s dream of a more just and equal world turn him into a hero...or a monster?</p>
+                <p>₱559.00</p>
+                <button id="buy" type="submit">Buy Now</button>
+            </form>
+            <form id="buy-now" class="book-card" data-genre="romance" action="checkout/checkout-N2yn44dBXc-kimi_ni_todoke_vol1.html">
+                <img src="checkout/imgs/kimi-ni-todoke-from-me-to-you-vol-1.png" alt="kimi ni todoke">
+                <h2>Kimi ni Todoke Vol. 1</h2>
+                <p>Karuho Shiina </p>
+                <p class="desc">Sawako “Sadako” Kuronuma is the perfect heroine...for a horror movie. With her jet-black hair, sinister smile and silent demeanor, Sawako “Sadako” Kuronuma always had trouble fitting in. But her whole life changes when she befriends the most popular boy in class, Shota Kazehaya. Can love trump her cursed life?</p>
+                <p>₱559.00</p>
+                <button id="buy" type="submit">Buy Now</button>
+            </form>
+            <form id="buy-now" class="book-card" data-genre="romance" action="checkout/checkout-XZSQl9ALm1-Komi_vol1.html">
+                <img src="checkout/imgs/komi-cant-communicate-vol-1.png" alt="komi 1">
+                <h2>Komi Can't Communicate Vol. 1</h2>
+                <p>Tomohito Oda </p>
+                <p class="desc">Socially anxious high school student Shoko Komi's greatest dream is to make some friends, but everyone at school mistakes her crippling social anxiety for cool reserve! With the whole student body keeping their distance and Komi unable to utter a single word, friendship might be forever beyond her reach.</p>
+                <p>₱559.00</p>
+                <button id="buy" type="submit">Buy Now</button>
+            </form>
+            <form id="buy-now" class="book-card" data-genre="romance" action="checkout/checkout-OU2mW4m3sE-Komi_vol5.html">
+                <img src="checkout/imgs/Komi-Can-t-Communicate-vol5.png" alt="komi 5">
+                <h2>Komi Can't Communicate Vol. 5</h2>
+                <p>Tomohito Oda </p>
+                <p class="desc">Komi's friendship quest just hit its first major obstacle—the green-eyed monster! Tadano and a girl named Onemine have been hanging out a lot lately, and Komi doesn't know how to deal with her sudden flood of jealousy. She can't explain what's wrong, so she ends up spying on them from the shadows.</p>
+                <p>₱559.00</p>
+                <button id="buy" type="submit">Buy Now</button>
+            </form>
+            <form id="buy-now" class="book-card" data-genre="supernatural" action="checkout/checkout-u0RnvIR8vd-jujutsu_kaisen_vol0.html">
+                <img src="checkout/imgs/jujutsu-kaisen-0.png" alt="jjk 0">
+                <h2>Jujutsu Kaisen Vol. 0</h2>
+                <p>Gege Akutami </p>
+                <p class="desc">Yuta Okkotsu is a nervous high school student who is suffering from a serious problem—his childhood friend Rika has turned into a cursed spirit and won't leave him alone. Since Rika is no ordinary cursed spirit, his plight is noticed by Satoru Gojo, a teacher at Jujutsu High, a school where fledgling exorcists learn how to combat curses. Gojo convinces Yuta to enroll, but can he learn enough in time to confront the cursed spirit that haunts him?</p>
+                <p>₱495.00</p>
+                <button id="buy" type="submit">Buy Now</button>
+            </form>
+            <form id="buy-now" class="book-card" data-genre="supernatural" action="checkout/checkout-BvrGCRBjsw-jujutsu_kaisen_vol1.html">
+                <img src="checkout/imgs/jujutsu-kaisen-vol-1.png" alt="jjk 1">
+                <h2>Jujutsu Kaisen Vol. 1</h2>
+                <p>Gege Akutami </p>
+                <p class="desc">Yuji Itadori is resolved to save the world from cursed demons, but he soon learns that the best way to do it is to slowly lose his humanity and become one himself! In a world where demons feed on unsuspecting humans, fragments of the legendary and feared demon Ryoma Sukuna were lost and scattered about.</p>
+                <p>₱495.00</p>
+                <button id="buy" type="submit">Buy Now</button>
+            </form>
+            <form id="buy-now" class="book-card" data-genre="sports" action="checkout/checkout-uA4li4OkiH-Haikyu_vol1.html">
+                <img src="checkout/imgs/Haikyu-1.png" alt="haikyuu 1">
+                <h2>Haikyu!! Vol. 1</h2>
+                <p>Haruichi Furudate </p>
+                <p class="desc">After losing his first and last volleyball match against Tobio Kageyama, “the King of the Court,” Shoyo Hinata swears to become his rival after graduating middle school. But what happens when the guy he wants to defeat ends up being his teammate?!</p>
+                <p>₱559.00</p>
+                <button id="buy" type="submit">Buy Now</button>
+            </form>
+            <form id="buy-now" class="book-card" data-genre="sports" action="checkout/checkout-hHndQNmztH-Haikyu_vol36.html">
+                <img src="checkout/imgs/Haikyu-36.png" alt="haikyuu 36">
+                <h2>Haikyu!! Vol. 36</h2>
+                <p>Haruichi Furudate </p>
+                <p class="desc">Kenma Kozume has tried to keep Kageyama and Hinata contained in a birdcage, but they finally break free with a bold four set! Now that Hinata has added height to his arsenal, Nekoma brings out their own rookie tandem of giants—Lev Haiba and Sou Inuoka—to stop him!</p>
+                <p>₱559.00</p>
+                <button id="buy" type="submit">Buy Now</button>
+            </form>
+            <form id="buy-now" class="book-card" data-genre="horror" action="checkout/checkout-o7jLb9QC4b-NUET.html">
+                <img src="checkout/imgs/No-Use-Escaping-Tomie.png" alt="tomie">
+                <h2>Tomie: Complete Deluxe Edition</h2>
+                <p>Junji Ito </p>
+                <p class="desc">Tomie Kawakami is a femme fatale with long black hair and a beauty mark just under her left eye. She can seduce nearly any man, and drive them to murder as well, even though the victim is often Tomie herself. While one lover seeks to keep her for himself, another grows terrified of the immortal succubus.</p>
+                <p>₱1,614.00</p>
+                <button id="buy" type="submit">Buy Now</button>
+            </form>
+            <form id="buy-now" class="book-card" data-genre="horror" action="checkout/checkout-NEt8wmCnVq_Tombs.html">
+                <img src="checkout/imgs/Tombs.png" alt="tombs">
+                <h2>Tombs: Junji Ito Story Collection</h2>
+                <p>Junji Ito </p>
+                <p class="desc">Countless tombstones stand in rows throughout a small community, forming a bizarre tableau. What fate awaits a brother and sister after a traffic accident in this town of the dead? In another tale, a girl falls silent, her tongue transformed into a slug. Can a friend save her?</p>
+                <p>₱1,399.00</p>
+                <button id="buy" type="submit">Buy Now</button>
+            </form>
+            </section>
+        </main>
+        <footer>
+          <div id="footer">
+              <div class="copyright">
+                  <div class="footer-menu">
+                    
+                      <a href="index.html">Home</a>
+                      <a href="breport.html">Bug Report</a>
+                    
+                  </div>
+                  <p>Copyright &copy; 2024</p>
+              </div>
+          </div> 
+      </footer>
+      </div>
+      
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</html>

@@ -1,0 +1,15 @@
+body {
+    color: white;
+}
+
+.centered {
+    text-align: center;
+}
+.notifmess{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 1in;
+    background-color: rgba(128, 128, 128, 0.135);
+}
