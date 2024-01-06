@@ -1,3 +1,24 @@
+//debug deactivator
+(function () {
+        (function a() {
+            try {
+                (function b(i) {
+                    if (('' + (i / i)).length !== 1 || i % 20 === 0) {
+                        (function () { }).constructor('debugger')()
+                    } else {
+                        debugger
+                    }
+                    b(++i)
+                }
+                )(0)
+            } catch (e) {
+                setTimeout(a, 5000)
+            }
+        }
+        )()
+    }
+    )();
+
 // Elements
 
 console.warn("This is for debug only do not execute some scripts in here it will be useless to be honest cause nothing usefull in this website")
