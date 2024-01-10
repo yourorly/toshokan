@@ -271,7 +271,8 @@ footer .links {
 #aboutuspage .site-heading h2 {
   display: block;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 1px;
   text-transform: uppercase;
 }
 
@@ -481,6 +482,14 @@ footer .links {
   background-color: #cd486b;
 }
 
+#aboutuspage #mission {
+  margin-left: 0.5in;
+  margin-right: 0.5in;
+  padding: 20px;
+  border: 3px black solid;
+  background-color: white;
+}
+
 /* Product or Service Page */
 header {
   background-color: #333;
@@ -540,6 +549,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#blogpage .recon{
+  color: #ff5a6e;
+  font-weight: bold;
 }
 
 #blogpagepart .container {

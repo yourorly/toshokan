@@ -10,7 +10,7 @@ function sendMessage() {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-            content: `#-!-\n\nNew Message Submission:\n\nName: ${formData.get('name')}\nEmail: ${formData.get('email')}\nPhone Number: ${formData.get('telnum')}\n\nMessage: \n${formData.get('message')}`,
+            content: `--Contact--\n\nNew Message Submission:\n\nName: ${formData.get('name')}\nEmail: ${formData.get('email')}\nPhone Number: ${formData.get('telnum')}\n\nMessage: \n${formData.get('message')}`,
         }),
     })
     .then(response => {

@@ -10,7 +10,7 @@ function bugreport(){
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-            content: `#-!-\n\nProblem:\n\nName: ${formData.get('name')}\nEmail: ${formData.get('email')}\nPlatform: ${formData.get('platform')}\nDevice Resolution: ${formData.get('resolution')}\nPage: ${formData.get('page')}\n\nProblem: \n${formData.get('message')}`,
+            content: `!Bug Report!\n\nProblem:\n\nName: ${formData.get('name')}\nEmail: ${formData.get('email')}\nPlatform: ${formData.get('platform')}\nDevice Resolution: ${formData.get('resolution')}\nPage: ${formData.get('page')}\n\nProblem: \n${formData.get('message')}`,
         }),
     })
     .then(response => {
